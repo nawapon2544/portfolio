@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* สีพื้นหลังของหน้าจอ */
+}
+
+.splash-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.splash-content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #343a40; /* สีข้อความ */
+}
+
+p {
+    font-size: 1.2em;
+    color: #6c757d; /* สีข้อความ */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* สำหรับซ่อนหน้า splash screen โดยใช้ animation fadeOut */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* เพิ่ม animation เพื่อให้เกิดการหมุน */
+@keyframes rotate {
+   
